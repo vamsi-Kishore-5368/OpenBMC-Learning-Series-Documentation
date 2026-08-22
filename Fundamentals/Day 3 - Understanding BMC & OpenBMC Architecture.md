@@ -30,9 +30,6 @@ It has its own hardware, and software runs on that hardware to provide managemen
 
 ### OpenBMC Architecture at a Glance
 
-![OpenBMC Architecture — Day 3](images/day3-openbmc-architecture.png)
-
-*Figure 1 — A simplified, conceptual view of the BMC/OpenBMC software stack and its relationship with BMC hardware and management clients.*
 
 A simplified architecture looks like this:
 
@@ -63,7 +60,7 @@ A simplified architecture looks like this:
      │              │              │
      └──────────────┼──────────────┘
                     ▼
-       MANAGEMENT INTERFACES
+          MANAGEMENT INTERFACES
               ┌─────┴─────┐
               ▼           ▼
            Redfish      IPMI
@@ -202,7 +199,7 @@ Linux Kernel
 Driver / Kernel Subsystem
        │
        ▼
-Hardware
+    Hardware
 ```
 
 For example, a hardware device connected through an I²C bus may be accessed through the Linux kernel's I²C subsystem and appropriate driver support.
@@ -219,7 +216,7 @@ Kernel Interface
 Driver / Subsystem
         │
         ▼
-Hardware
+    Hardware
 ```
 
 We will explore Linux drivers and hardware access in much greater detail later.
@@ -448,7 +445,7 @@ Management Interface
      (e.g. Redfish)
         │
         ▼
-Administrator
+   Administrator
 ```
 
 The important thing is not memorizing every component.
@@ -584,32 +581,3 @@ After Day 3, you should understand:
 
 > **Hardware → Bootloader → Linux → systemd/D-Bus → OpenBMC Services → Management Interfaces**
 
----
-
-## What's Next?
-
-Now that we understand the **overall BMC and OpenBMC architecture**, we can go one level deeper.
-
-### Day 4 — BMC Hardware Architecture
-
-**What's actually inside a BMC?**
-
-We will explore:
-
-- BMC SoC
-- Processor
-- RAM
-- Flash
-- Ethernet
-- I²C / SMBus
-- SPI
-- GPIO
-- UART
-- Host interfaces
-- Sensors and peripheral devices
-
-The goal will be to connect the **physical BMC hardware** with the software architecture we learned today.
-
----
-
-**OpenBMC Learning Series — One concept at a time.**
