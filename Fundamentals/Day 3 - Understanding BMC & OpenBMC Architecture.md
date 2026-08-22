@@ -1,4 +1,4 @@
-OpenBMC Learning Series — Day 3 Understanding **BMC** & OpenBMC Architecture From **BMC** Hardware to OpenBMC Services
+## OpenBMC Learning Series — Day 3 Understanding **BMC** & OpenBMC Architecture From **BMC** Hardware to OpenBMC Services
 
 In Day 1, we introduced the basic server architecture and understood the relationship between the Host System, **BMC**, and OpenBMC.
 
