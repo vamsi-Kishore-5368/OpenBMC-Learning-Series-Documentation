@@ -37,27 +37,27 @@ It has its own hardware, and software runs on that hardware to provide managemen
 A simplified architecture looks like this:
 
 ```text
-BMC PLATFORM
-     │
-     ▼
-BMC HARDWARE
-     │
-     ▼
-BOOTLOADER
-     │
-     ▼
-LINUX KERNEL + DRIVERS
-     │
-     ▼
-SYSTEMD
-     │
-     ▼
-D-BUS
-     │
-     ▼
-OPENBMC SERVICES
-     │
-     ├──────────────┬──────────────┐
+               BMC PLATFORM
+                    │
+                    ▼
+               BMC HARDWARE
+                    │
+                    ▼
+               BOOTLOADER
+                    │
+                    ▼
+          LINUX KERNEL + DRIVERS
+                    │
+                    ▼
+                 SYSTEMD
+                    │
+                    ▼
+                  D-BUS
+                    │
+                    ▼
+               OPENBMC SERVICES
+                    │
+     ┌──────────────├──────────────┐
      ▼              ▼              ▼
   Sensors       Inventory       Control
      │              │              │
