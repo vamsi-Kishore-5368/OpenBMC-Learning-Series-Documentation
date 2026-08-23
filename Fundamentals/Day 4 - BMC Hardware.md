@@ -580,34 +580,3 @@ After Day 4, you should understand:
 ### ✅ 10. A simple mental model is:
 
 > **BMC SoC + RAM + Flash + Network + Hardware Interfaces + Connected Platform Devices**
-
----
-
-## What's Next?
-
-Now we understand:
-
-**What a BMC is → What a BMC does → How OpenBMC is organized → What hardware is inside/around the BMC**
-
-The next question is:
-
-> **How does the BMC actually communicate with the host system?**
-
-### Day 5 — BMC ↔ Host Communication
-
-We will explore:
-
-- Why the BMC needs to communicate with the host
-- Host-BMC communication paths
-- LPC
-- eSPI
-- I2C / SMBus
-- PCIe
-- UART
-- GPIO
-- Host IPMI
-- The difference between a physical interface and a protocol
-
-One concept at a time.
-
-**OpenBMC Learning Series — From fundamentals to internals.**
