@@ -559,29 +559,6 @@ After completing Day 5, you should understand:
 
 > **Physical / Bus Interface → Transport → Management Protocol / Data Model → BMC Software**
 
----
-
-## What's Next?
-
-Now we understand:
-
-**What a BMC is → What it does → How OpenBMC is organized → What hardware it contains → How it communicates with the host**
-
-The next question is:
-
-> **How does a BMC actually start running all of this software?**
-
-### Day 6 — BMC Boot Process
-
-We will follow the BMC from:
-
-**Power ON → Boot ROM → Bootloader → Linux Kernel → Root Filesystem → OpenBMC Services**
-
-One concept at a time.
-
-**OpenBMC Learning Series — From fundamentals to internals.**
-
----
 
 ## References
 
