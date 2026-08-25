@@ -716,37 +716,6 @@ After completing Day 6, you should understand:
 
 > **Reset → Boot ROM → Bootloader → Linux → RootFS → PID 1/systemd → OpenBMC Services → BMC Ready**
 
----
-
-## What's Next?
-
-Now we understand how the BMC goes from **power-on to a running OpenBMC system**.
-
-The next question is:
-
-> **What exactly is Linux doing inside the BMC?**
-
-### Day 7 — Linux on the BMC
-
-We will explore:
-
-- Why BMCs use Linux
-- Linux kernel in an embedded system
-- Processes
-- Threads
-- Memory
-- Filesystems
-- Drivers
-- Device Tree
-- systemd
-- Userspace
-- How OpenBMC fits on top of Linux
-
-One concept at a time.
-
-**OpenBMC Learning Series — From fundamentals to internals.**
-
----
 
 ## References
 
