@@ -529,29 +529,6 @@ A real sensor path can span:
 
 > **Hardware → Linux driver/subsystem → OpenBMC service → D-Bus → Management interface**
 
----
-
-## What's Next?
-
-We now understand:
-
-> **Why Linux is used → what Linux provides → how OpenBMC sits on top of Linux.**
-
-### Day 8 — Linux Kernel & Device Drivers
-
-We will explore:
-
-- What exactly is a Linux kernel?
-- Kernel space vs userspace
-- What is a device driver?
-- How Linux represents hardware
-- `/dev`, `/sys` and `/proc`
-- I²C/GPIO driver concepts
-- How an OpenBMC application ultimately reaches hardware
-
-One concept at a time. 🚀
-
----
 
 ## Official OpenBMC References
 
