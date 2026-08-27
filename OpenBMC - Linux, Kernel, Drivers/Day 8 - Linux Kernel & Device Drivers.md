@@ -515,32 +515,6 @@ A simplified sensor path can be:
 ### ✅ 10.
 OpenBMC is layered on top of Linux rather than directly replacing the kernel.
 
----
-
-## What's Next?
-
-We now understand:
-
-> **Why Linux is used on a BMC → what the kernel does → what drivers do → how Linux represents hardware → how OpenBMC reaches hardware.**
-
-### Day 9 — Deep Dive into Linux Device Tree
-
-We will explore:
-
-- What is a Device Tree?
-- DTS vs DTSI
-- Nodes and properties
-- `compatible`
-- `reg`
-- `interrupts`
-- GPIO properties
-- I²C device descriptions
-- How a Device Tree node connects to a Linux driver
-- How this appears in an OpenBMC machine
-
-One concept at a time. 🚀
-
----
 
 ## References
 
