@@ -573,40 +573,6 @@ A simplified relationship is:
 ### ✅ 10.
 When debugging embedded hardware, Device Tree is one of the important layers to inspect.
 
----
-
-## What's Next?
-
-We have now moved from:
-
-**Linux Kernel → Drivers**
-
-to:
-
-**Device Tree → Driver Matching → Hardware**
-
-### Day 10 — Understanding D-Bus in OpenBMC
-
-We will explore one of the most important OpenBMC concepts:
-
-> **How do OpenBMC services communicate with each other?**
-
-We'll look at:
-
-- What is D-Bus?
-- Why OpenBMC uses D-Bus
-- Objects
-- Interfaces
-- Properties
-- Methods
-- Signals
-- `busctl`
-- A practical sensor example
-- How D-Bus connects OpenBMC services
-
-One concept at a time. 🚀
-
----
 
 ## References
 
