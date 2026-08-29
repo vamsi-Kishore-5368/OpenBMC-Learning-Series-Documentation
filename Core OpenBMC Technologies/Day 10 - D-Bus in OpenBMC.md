@@ -656,31 +656,6 @@ Signals announce events or changes.
 
 ---
 
-## 🔜 What's Next?
-
-Now that we understand:
-
-**Hardware → Linux → Drivers → OpenBMC Services → D-Bus**
-
-we are ready to explore how OpenBMC services are actually built and managed.
-
-# Day 11 — OpenBMC Services & `systemd`
-
-We will look at:
-
-- What an OpenBMC service actually is
-- How services are organized
-- `systemd` and service startup
-- `.service` files
-- Dependencies
-- Service lifecycle
-- How a service interacts with D-Bus
-- A simple OpenBMC service example
-
-One concept at a time. 🚀
-
----
-
 ## References
 
 1. **OpenBMC — Interface Overview**  
