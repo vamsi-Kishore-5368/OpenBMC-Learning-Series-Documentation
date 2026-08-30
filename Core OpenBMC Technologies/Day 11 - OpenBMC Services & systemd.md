@@ -545,39 +545,6 @@ D-Bus and systemd have different responsibilities:
 
 ---
 
-## 🔜 What's Next?
-
-Now we know:
-
-```text
-Hardware
-   ↓
-Linux
-   ↓
-Drivers
-   ↓
-OpenBMC Services
-   ↓
-systemd + D-Bus
-```
-
-The next step is to start looking at **how an OpenBMC service is actually built**.
-
-### Day 12 — Inside an OpenBMC Service
-
-We can explore:
-
-- Source code structure
-- `sdbusplus`
-- D-Bus interfaces
-- Service executable
-- `.service` files
-- Yocto/BitBake integration
-- How everything gets built into the BMC image
-
-One concept at a time. 🚀
-
----
 
 ## References
 
