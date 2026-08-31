@@ -658,27 +658,6 @@ The big picture is:
 
 ---
 
-## 🔜 What's Next?
-
-### Day 13 — Reading Real OpenBMC Source Code
-
-We can take a real OpenBMC component and explore:
-
-- Repository structure
-- `main()` / application entry point
-- C++ source
-- D-Bus interface
-- `sdbusplus`
-- systemd unit
-- Yocto recipe
-- How the pieces connect
-
-**From diagrams → to real OpenBMC code.**
-
-One concept at a time. 🚀
-
----
-
 ## References
 
 1. OpenBMC — Interface Overview  
