@@ -581,26 +581,6 @@ to:
 
 ---
 
-## 🔜 Day 14
-
-# D-Bus in Real OpenBMC Code
-
-We will go one level deeper into the code we just saw:
-
-- Bus name
-- Object path
-- Interface
-- Properties
-- Methods
-- Signals
-- ObjectManager
-- How another service communicates with the object
-
-**From reading the service → to understanding its D-Bus API.**
-
-One concept at a time. 🚀
-
----
 
 ## References
 
