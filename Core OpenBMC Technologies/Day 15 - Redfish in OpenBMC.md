@@ -1061,33 +1061,6 @@ This is one of the most important architectural connections in the OpenBMC learn
 
 ---
 
-# 🔮 What's Next?
-
-We have now learned how a remote client reaches OpenBMC through Redfish.
-
-The next logical step is to go one level deeper:
-
-> **How is a Redfish endpoint actually implemented inside bmcweb source code?**
-
-That means we can take a real bmcweb route and trace:
-
-```text
-Redfish URI
-    ↓
-HTTP route
-    ↓
-C++ handler
-    ↓
-D-Bus lookup
-    ↓
-D-Bus property / method
-    ↓
-Redfish JSON response
-```
-
-This will let us apply the same source-reading approach from Day 13 to **bmcweb itself**.
-
----
 
 # 📚 References
 
