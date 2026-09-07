@@ -1524,30 +1524,6 @@ D-Bus results often arrive through callbacks, so source-code execution is not al
 
 ---
 
-## 32. What Should We Learn Next?
-
-We have now learned how to read a real bmcweb route and trace its relationship with D-Bus.
-
-The next natural step is to go deeper into an important OpenBMC use case:
-
-```text
-Redfish Sensor
-      ↓
-bmcweb sensor code
-      ↓
-ObjectMapper
-      ↓
-D-Bus Sensor.Value
-      ↓
-Threshold interfaces
-      ↓
-Redfish Sensor JSON
-```
-
-That would allow us to follow hardware sensor data all the way from an OpenBMC sensor service to the external Redfish API.
-
----
-
 ## 33. Final Mental Model
 
 If you remember only one diagram from Day 16:
