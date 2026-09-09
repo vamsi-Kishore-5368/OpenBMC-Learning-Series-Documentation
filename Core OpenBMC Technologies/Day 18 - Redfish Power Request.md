@@ -944,21 +944,6 @@ Client → Redfish → bmcweb → D-Bus → State Manager → Hardware
 
 ---
 
-## 33. What's Next?
-
-We now understand both sides:
-
-```text
-MONITORING
-Sensor → D-Bus → bmcweb → Redfish
-```
-
-and:
-
-```text
-CONTROL
-Redfish → bmcweb → D-Bus → State Manager → System
-```
 
 
 # References
