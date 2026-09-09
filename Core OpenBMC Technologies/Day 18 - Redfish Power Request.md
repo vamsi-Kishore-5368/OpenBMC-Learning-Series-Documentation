@@ -960,13 +960,6 @@ CONTROL
 Redfish → bmcweb → D-Bus → State Manager → System
 ```
 
-The next natural step is to go below the state machine:
-
-> **How does a logical “Power On” request finally become GPIOs, power sequencing, delays, and real hardware activity?**
-
-That takes us from the **software state machine** to the **actual hardware control path**.
-
----
 
 # References
 
