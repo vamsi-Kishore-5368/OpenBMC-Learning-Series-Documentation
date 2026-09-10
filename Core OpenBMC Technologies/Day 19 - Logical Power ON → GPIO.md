@@ -1376,55 +1376,6 @@ The control logic exists to move the physical system toward the requested state 
 
 ---
 
-## 36. What's Next?
-
-Day 19 showed:
-
-```text
-Power ON
-   ↓
-Power-Control Logic
-   ↓
-Hardware Signals
-```
-
-The next question is:
-
-> **What happens when the platform has multiple power rails, dependencies, delays, and power-good signals that must occur in a specific order?**
-
-That takes us to:
-
-# Day 20 — OpenBMC Power Sequencing
-
-We will move from:
-
-```text
-"Power ON"
-```
-
-to:
-
-```text
-Rail 1
-  ↓
-Power Good
-  ↓
-Rail 2
-  ↓
-Power Good
-  ↓
-CPU Power
-  ↓
-Reset Release
-  ↓
-POST
-  ↓
-Host Running
-```
-
-That will take us even closer to the actual electrical sequence of a server motherboard.
-
----
 
 # References
 
