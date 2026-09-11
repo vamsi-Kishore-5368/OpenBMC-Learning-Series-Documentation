@@ -1482,38 +1482,6 @@ whether the expected hardware transition occurred.
 
 ------------------------------------------------------------------------
 
-# 33. What We Should Learn Next
-
-Now that we understand:
-
-``` text
-Power ON
-   ↓
-GPIO
-   ↓
-Power Sequence
-   ↓
-Power Rails
-   ↓
-Power-Good
-   ↓
-Reset
-   ↓
-Host Boot
-```
-
-the next natural question is:
-
-> **How are all these platform-specific hardware components represented
-> and configured in OpenBMC?**
-
-That leads naturally into **platform configuration, FRU/inventory, and
-hardware-description mechanisms**.
-
-The next topics will take us deeper into how OpenBMC understands the
-physical server it is running on.
-
-------------------------------------------------------------------------
 
 # 34. Final Mental Model
 
