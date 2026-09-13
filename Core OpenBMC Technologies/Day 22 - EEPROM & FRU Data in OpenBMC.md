@@ -1449,35 +1449,6 @@ Redfish presents
 13. **Debug bottom-up: bus → EEPROM → FRU → FruDevice → Entity Manager →
     Inventory → bmcweb → Redfish.**
 
-------------------------------------------------------------------------
-
-## 47. What's Next?
-
-We now know how OpenBMC can discover hardware identity.
-
-The next question is:
-
-> **How does OpenBMC detect abnormal hardware conditions and decide that
-> something is in a warning or critical state?**
-
-That naturally leads to:
-
-``` text
-Sensor Value
-      ↓
-Thresholds
-      ↓
-Warning / Critical
-      ↓
-Events / Faults
-      ↓
-Logging
-      ↓
-Redfish / Management
-```
-
-This connects the sensor work from Day 17 with the inventory, state and
-control work from Days 18--22.
 
 ------------------------------------------------------------------------
 
