@@ -1487,51 +1487,7 @@ Value → Threshold → Alarm → Action/Event → Management
 15. Inventory associations connect sensor conditions to physical hardware.
 16. Debugging should proceed bottom-up.
 
----
 
-## 44. What’s Next?
-
-We now have:
-
-```text
-What hardware exists?
-        ↓
-FRU / Inventory
-
-What is happening?
-        ↓
-Sensors
-
-Is something abnormal?
-        ↓
-Thresholds / Alarms
-
-What should happen?
-        ↓
-Monitoring / Control
-```
-
-The next question is:
-
-> **How does OpenBMC record, classify and expose hardware faults and events?**
-
-That leads naturally toward:
-
-```text
-Fault Condition
-      ↓
-D-Bus / Event
-      ↓
-phosphor-logging
-      ↓
-Severity / Metadata
-      ↓
-Callout / Inventory
-      ↓
-Event Log
-      ↓
-Redfish / Management
-```
 
 ---
 
