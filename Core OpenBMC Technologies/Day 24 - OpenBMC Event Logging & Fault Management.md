@@ -1212,32 +1212,8 @@ Sensor / Hardware Condition
     Remote Management
 ```
 
-## 63. What's Next?
 
-We have now connected:
-
-``` text
-Sensors → Thresholds → Fault Detection → Event Logging → Inventory Association → Redfish / IPMI
-```
-
-A natural next step is **IPMI and SEL in greater depth**:
-
-``` text
-Sensor / Platform Event
-        ↓
-      IPMI
-        ↓
-     SEL Record
-        ↓
- Sensor Number / Event Type
-        ↓
-    ipmitool sel
-```
-
-This will connect the modern D-Bus/OpenBMC architecture with the
-traditional server-management model used by IPMI.
-
-## 64. References
+## 63. References
 
 1.  OpenBMC `phosphor-logging`:
     https://github.com/openbmc/phosphor-logging
