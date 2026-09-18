@@ -2600,38 +2600,6 @@ IPMI SEL
 ipmitool
 ```
 
----
-
-# 84. What's Next?
-
-After understanding:
-
-```text
-Sensors
-   ↓
-Thresholds
-   ↓
-Events
-   ↓
-Event Logging
-   ↓
-IPMI SEL
-```
-
-the next major OpenBMC management topic is naturally:
-
-## **MCTP — Management Component Transport Protocol**
-
-The progression can become:
-
-```text
-Day 24 → Event Logging
-Day 25 → IPMI & SEL
-Day 26 → MCTP
-Day 27 → PLDM
-```
-
-This moves the series from traditional IPMI management toward the newer platform-management protocols used for communication between management controllers and devices.
 
 ---
 
