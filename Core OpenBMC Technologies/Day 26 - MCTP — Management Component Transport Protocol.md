@@ -1537,42 +1537,6 @@ PLDM
 > **MCTP tells the platform how to transport the message; PLDM tells the
 > platform what the message means.**
 
-------------------------------------------------------------------------
-
-## 63. What's Next?
-
-# Day 27 --- PLDM
-
-We will move above the transport layer and explore:
-
--   What is PLDM?
--   Why PLDM exists
--   PLDM types
--   PLDM Base
--   PLDM Platform
--   PLDM FRU
--   PLDM BIOS
--   PLDM Firmware Update
--   PDRs
--   PLDM Terminus
--   PLDM discovery
--   `pldmd`
--   `pldmtool`
--   `libpldm`
--   PLDM over MCTP
--   Complete device-management examples
-
-The goal is to move from:
-
-``` text
-How does the message travel?
-```
-
-to:
-
-``` text
-What does the message actually do?
-```
 
 ------------------------------------------------------------------------
 
