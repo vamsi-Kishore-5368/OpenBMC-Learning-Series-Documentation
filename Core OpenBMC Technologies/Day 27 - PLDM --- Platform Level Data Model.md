@@ -1109,93 +1109,9 @@ Broader architecture:
       Device         Device         Device
 ```
 
-## 44. Interview Questions
 
-### Q1. What is PLDM?
 
-A DMTF-defined platform-management data model/message protocol used for
-inventory, monitoring, control, events and related platform-management
-functions.
-
-### Q2. Is PLDM a transport protocol?
-
-No. MCTP commonly provides the transport.
-
-### Q3. What is the difference between MCTP and PLDM?
-
-MCTP transports messages between endpoints; PLDM defines management
-message semantics.
-
-### Q4. What is a TID?
-
-A PLDM Terminus ID.
-
-### Q5. What is an EID?
-
-An MCTP Endpoint ID.
-
-### Q6. EID vs TID?
-
-EID belongs to MCTP addressing; TID identifies a PLDM terminus.
-
-### Q7. What is a PDR?
-
-A Platform Descriptor Record that provides structured information about
-platform resources, relationships, sensors, effecters, inventory and
-related management information.
-
-### Q8. Why are PDRs important?
-
-They provide a standardized, discoverable description of platform
-resources instead of requiring every resource to be hard-coded.
-
-### Q9. What is pldmd?
-
-The OpenBMC PLDM daemon responsible for PLDM platform integration such
-as discovery, PDR processing, monitoring, control and events.
-
-### Q10. What is libpldm?
-
-A library providing common PLDM functionality, including message
-encode/decode APIs.
-
-### Q11. What is pldmtool?
-
-A BMC-side PLDM requester/debugging tool for issuing PLDM commands and
-displaying responses.
-
-### Q12. What is a PLDM Type?
-
-A functional grouping of PLDM commands, such as Base, Platform
-Monitoring and Control, FRU, BIOS and Firmware Update.
-
-### Q13. What happens when a new MCTP endpoint appears?
-
-At a high level, `pldmd` learns about the endpoint through the MCTP
-D-Bus interface, determines whether PLDM is supported, initializes the
-PLDM terminus, discovers capabilities and processes PDRs. \[5\]
-
-### Q14. How does a PLDM sensor reach OpenBMC?
-
-``` text
-Remote Sensor
-   ↓
-PLDM Sensor PDR
-   ↓
-MCTP
-   ↓
-pldmd
-   ↓
-D-Bus Sensor Object
-   ↓
-OpenBMC applications
-```
-
-### Q15. Does PLDM replace Redfish?
-
-No. They serve different layers of the management architecture.
-
-## 45. Practical Debugging Checklist
+## 44. Practical Debugging Checklist
 
 ### Step 1 --- Check MCTP
 
@@ -1253,7 +1169,7 @@ Did pldmd create the expected object?
 Is the sensor/effecter visible?
 ```
 
-## 46. Common Mistakes
+## 45. Common Mistakes
 
 **Mistake:** "PLDM is a transport protocol."\
 **Correction:** PLDM is the platform-management protocol/data model.
@@ -1275,7 +1191,7 @@ information.
 **Correction:** MCTP transports the message; PLDM defines
 sensor-management semantics.
 
-## 47. Mental Model to Remember
+## 46. Mental Model to Remember
 
 ``` text
                  MANAGEMENT
@@ -1311,7 +1227,7 @@ PLDM = Management semantics
 MCTP = Transport
 ```
 
-## 48. Day 27 Summary
+## 47. Day 27 Summary
 
 Covered:
 
@@ -1340,7 +1256,7 @@ Covered:
 -   Debugging
 -   Interview questions
 
-## 49. Final Day 25 → 26 → 27 Connection
+## 48. Final Day 25 → 26 → 27 Connection
 
 ``` text
                     OpenBMC
@@ -1374,7 +1290,7 @@ PLDM
 This is not simply "one replaces another"; each addresses a different
 part of the platform-management architecture.
 
-## 50. Official Source Map
+## 49. Official Source Map
 
 -   OpenBMC PLDM: https://github.com/openbmc/pldm
 -   PLDM Stack Design:
@@ -1386,7 +1302,7 @@ part of the platform-management architecture.
     https://github.com/openbmc/docs/blob/master/designs/mctp/mctp-kernel.md
 -   DMTF: https://www.dmtf.org/standards/PLDM
 
-## 51. Recommended Source-Code Reading Order
+## 50. Recommended Source-Code Reading Order
 
 ``` text
 1. pldm/README.md
