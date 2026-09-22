@@ -1571,152 +1571,8 @@ development.
 
 ------------------------------------------------------------------------
 
-# 56. Interview Questions
 
-### Q1. What is Yocto?
-
-A build ecosystem for creating customized Linux distributions for target
-hardware.
-
-### Q2. What is BitBake?
-
-The build/task execution engine that parses metadata, resolves
-dependencies and runs tasks.
-
-### Q3. What is a recipe?
-
-A `.bb` file describing how a software component is fetched, built,
-installed and packaged.
-
-### Q4. What is a layer?
-
-A collection of Yocto metadata such as recipes, configuration, classes
-and machine information.
-
-### Q5. What is `.bbappend`?
-
-A mechanism for extending an existing recipe from another layer.
-
-### Q6. What is `local.conf`?
-
-Build-specific configuration.
-
-### Q7. What is `bblayers.conf`?
-
-Configuration describing which layers participate in the build.
-
-### Q8. What does `bitbake obmc-phosphor-image` do?
-
-Builds the OpenBMC image target and its required dependencies for the
-configured machine.
-
-### Q9. What does `do_fetch` do?
-
-Fetches source described by `SRC_URI`.
-
-### Q10. What does `do_compile` do?
-
-Compiles the recipe's source.
-
-### Q11. What does `do_install` do?
-
-Installs built files into the recipe staging destination `${D}`.
-
-### Q12. What does `do_package` do?
-
-Turns staged files into packages.
-
-### Q13. What does `do_rootfs` do?
-
-Creates the target root filesystem from selected packages.
-
-### Q14. What does `do_image` do?
-
-Starts image generation.
-
-### Q15. What is sstate?
-
-Shared-state cache used to reuse task results when inputs allow it.
-
-### Q16. How do you inspect the final recipe environment?
-
-``` bash
-bitbake -e <recipe>
-```
-
-### Q17. How do you list tasks?
-
-``` bash
-bitbake -c listtasks <recipe>
-```
-
-### Q18. How do you see layers?
-
-``` bash
-bitbake-layers show-layers
-```
-
-### Q19. How do you find recipe providers?
-
-``` bash
-bitbake-layers show-recipes <recipe>
-```
-
-### Q20. How do you debug a failed task?
-
-Find the recipe/task and inspect its `log.do_<task>.*` under the recipe
-`WORKDIR/temp` directory.
-
-------------------------------------------------------------------------
-
-# 57. Common Interview Mistakes
-
-### Mistake 1
-
-"Yocto is an operating system."
-
-Better:
-
-> Yocto is a project/build ecosystem for creating customized Linux
-> distributions.
-
-### Mistake 2
-
-"BitBake builds everything sequentially."
-
-Better:
-
-> BitBake resolves a dependency/task graph and executes tasks according
-> to dependencies and available parallelism.
-
-### Mistake 3
-
-"If a recipe builds, it is automatically in the image."
-
-False.
-
-The resulting package must be selected by the image, packagegroup or
-dependencies.
-
-### Mistake 4
-
-"`do_compile` creates the BMC image."
-
-False.
-
-It compiles a recipe. Image generation happens later.
-
-### Mistake 5
-
-"Always run cleansstate when something fails."
-
-Better:
-
-> First inspect the failing task and log; clean only when appropriate.
-
-------------------------------------------------------------------------
-
-# 58. Most Important Commands
+# 56. Most Important Commands
 
 ``` bash
 # Configure target
@@ -1755,7 +1611,7 @@ bitbake -c clean <recipe>
 
 ------------------------------------------------------------------------
 
-# 59. Five Levels to Remember
+# 57. Five Levels to Remember
 
 ``` text
 1. LAYER
@@ -1794,7 +1650,7 @@ Hardware / QEMU
 
 ------------------------------------------------------------------------
 
-# 60. Final Day 28 Architecture
+# 58. Final Day 28 Architecture
 
 ``` text
                     OpenBMC Source
@@ -1848,7 +1704,7 @@ BMC Image
 
 ------------------------------------------------------------------------
 
-# 61. Official Source Map
+# 59. Official Source Map
 
 ### OpenBMC Repository
 
